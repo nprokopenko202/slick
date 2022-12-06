@@ -2730,10 +2730,7 @@
                 case 'right':
                 case 'up':
 
-                    slideCount =
-                        _.options.swipeToSlide ?
-                            _.checkNavigable( _.currentSlide - _.getSlideCount() ) :
-                            _.currentSlide - _.getSlideCount();
+                    slideCount = _.currentSlide - _.getSlideCount();
 
                     _.currentDirection = 1;
 
