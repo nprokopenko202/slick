@@ -581,7 +581,7 @@
             );
 
             for(a = 0; a < numOfSlides; a++){
-                var slide = originalSlides[a];
+                var slide = document.createElement('div');;
                 for(b = 0; b < _.options.rows; b++) {
                     var row = document.createElement('div');
                     for(c = 0; c < _.options.slidesPerRow; c++) {
@@ -590,6 +590,7 @@
                             row.appendChild(originalSlides.get(target));
                         }
                     }
+                    slide.appendChild(row);
                 }
                 newSlides.appendChild(slide);
             }
